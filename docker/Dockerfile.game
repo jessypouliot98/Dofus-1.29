@@ -4,4 +4,4 @@ RUN mkdir /opt/app
 
 WORKDIR /opt/app
 
-CMD ["java", "-jar", "AncestraGame.jar"]
+CMD ["java", "-jar", "Ancestra.jar"]

@@ -5,11 +5,11 @@
 # IP du serveur
 REALM_IP = 127.0.0.1
 
-#Configuration de la base de donn�e du serveur de connexion
+#Configuration de la base de donn?e du serveur de connexion
 REALM_DB_HOST = 127.0.0.1
 REALM_DB_USER = root
-REALM_DB_PASS = padopado
-REALM_DB_NAME = dofus
+REALM_DB_PASS = 
+REALM_DB_NAME = ancestra_realm
 
 # AR - GAME
 
@@ -18,28 +18,26 @@ DEBUG = true
 LOG = true
 
 # IP du serveur
-USE_IP = true
+USE_IP = false
 HOST_IP = 127.0.0.1
-LOCALIP_LOOPBACK = false
+LOCALIP_LOOPBACK = true
 
 # Clef d'identification
 AUTH_KEY = server1
 
 # Port du serveur
 GAME_PORT = 5555
-COM_PORT = 666
+COM_PORT = 489
 
-# Configuration g�n�rale
-MOTD = Servidor funcionando gracias a Ancestra Remake Rev54.
-MOTD_COLOR = 173ff
-# Player Limite : -1 = Illimit�
-PLAYER_LIMIT = 500
-# 10 * 60.000 = 600.000
+# Configuration g?n?rale
+MOTD =<b>Bienvenue sur le serveur Beta Ancestra_Remake</b>
+MOTD_COLOR = FF0000
+# Player Limite : -1 = Illimit?
+PLAYER_LIMIT = 100
 LOAD_ACTION_DELAY = 10
-# 30 * 60.000 = 1.800.000
 SAVE_TIME = 30
 
-# Configuration de la base de donn�e
+# Configuration de la base de donn?e
 DB_HOST = 127.0.0.1
 DB_USER = root
 DB_PASS = padopado
@@ -47,20 +45,23 @@ DB_NAME = dofus
 
 # Rates
 XP_PVP = 1
-XP_METIER = 5
-XP_PVM = 3
-DROP = 3
-KAMAS = 3
-HONOR = 3
+XP_METIER = 1
+XP_PVM = 1
+DROP = 1
+KAMAS = 1
+HONOR = 1
 
 # Configuration du GamePlay
-ALLOW_MULTI_ACCOUNT = false
+ALLOW_MULTI_ACCOUNT = true
 MAX_PERSO_PAR_COMPTE = 5
 USE_MOBS = true
+USE_CUSTOM_START = true
+START_MAP = 10298
+START_CELL = 314
 START_LEVEL = 1
 START_KAMAS = 0
-ZAAP = true
-LVL_PVP = 10
+ZAAP = false
+LVL_PVP = 15
 ALLOW_MULE_PVP = false
 AURA_SYSTEM = true
 MAX_IDLE_TIME = 30

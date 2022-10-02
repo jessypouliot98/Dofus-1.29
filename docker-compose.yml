@@ -20,7 +20,7 @@ services:
       context: ./
       dockerfile: ./docker/Dockerfile.game
     volumes:
-      - './src/DofusEmulator/Game:/opt/app:ro'
+      - './src/DofusEmulator/Game:/opt/app:rw'
     depends_on:
       - mysql
   realm:
@@ -28,6 +28,6 @@ services:
       context: ./
       dockerfile: ./docker/Dockerfile.realm
     volumes:
-      - './src/DofusEmulator/Realm:/opt/app:ro'
+      - './src/DofusEmulator/Realm:/opt/app:rw'
     depends_on:
       - mysql
