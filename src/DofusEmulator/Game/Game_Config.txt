@@ -8,8 +8,8 @@ REALM_IP = 127.0.0.1
 #Configuration de la base de donn?e du serveur de connexion
 REALM_DB_HOST = 127.0.0.1
 REALM_DB_USER = root
-REALM_DB_PASS = 
-REALM_DB_NAME = ancestra_realm
+REALM_DB_PASS = padopado
+REALM_DB_NAME = ancestra_db
 
 # AR - GAME
 
@@ -41,7 +41,7 @@ SAVE_TIME = 30
 DB_HOST = 127.0.0.1
 DB_USER = root
 DB_PASS = padopado
-DB_NAME = dofus
+DB_NAME = ancestra_db
 
 # Rates
 XP_PVP = 1

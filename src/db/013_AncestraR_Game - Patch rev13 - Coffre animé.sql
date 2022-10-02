@@ -1,1 +1,1 @@
-UPDATE `ancestra_game`.`monsters` SET `AI_Type` = '7' WHERE `monsters`.`id` =285;
+UPDATE `ancestra_db`.`monsters` SET `AI_Type` = '7' WHERE `monsters`.`id` =285;

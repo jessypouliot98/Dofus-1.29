@@ -1,4 +1,4 @@
-INSERT INTO `ancestra_game`.`use_item_actions` (`template`, `type`, `args`) VALUES 
+INSERT INTO `ancestra_db`.`use_item_actions` (`template`, `type`, `args`) VALUES 
 ('7461', '28', '24'),
 ('7462', '28', '28'),
 ('7463', '28', '26'),
@@ -32,4 +32,4 @@ INSERT INTO `ancestra_game`.`use_item_actions` (`template`, `type`, `args`) VALU
 ('7491', '28', '63'),
 ('7492', '28', '64'),
 ('8377', '28', '65');
-UPDATE `ancestra_game`.`item_template` SET `condition` = 'PJ=65' WHERE `item_template`.`id` =8377 AND `item_template`.`type` =88 AND `item_template`.`name` = 'Rune de Bricoleur' AND `item_template`.`level` =1 AND `item_template`.`statsTemplate` = '' AND `item_template`.`pod` =1 AND `item_template`.`panoplie` = -1 AND `item_template`.`prix` =1 AND `item_template`.`condition` = '' AND `item_template`.`armesInfos` = '' LIMIT 1 ;
+UPDATE `ancestra_db`.`item_template` SET `condition` = 'PJ=65' WHERE `item_template`.`id` =8377 AND `item_template`.`type` =88 AND `item_template`.`name` = 'Rune de Bricoleur' AND `item_template`.`level` =1 AND `item_template`.`statsTemplate` = '' AND `item_template`.`pod` =1 AND `item_template`.`panoplie` = -1 AND `item_template`.`prix` =1 AND `item_template`.`condition` = '' AND `item_template`.`armesInfos` = '' LIMIT 1 ;

@@ -9,12 +9,10 @@ services:
       - MYSQL_ROOT_PASSWORD=padopado
       - MYSQL_USER=dofusadmin
       - MYSQL_PASSWORD=padopado
-      - MYSQL_DATABASE=dofus
+      - MYSQL_DATABASE=ancestra_db
     volumes:
       - ./.mysql/:/var/lib/mysql:rw
-      - ./src/db/ar54_game.sql:/docker-entrypoint-initdb.d/01schema_game.sql:ro
-      - ./src/db/ar54_other.sql:/docker-entrypoint-initdb.d/02schema_other.sql:ro
-      - ./src/db/Extra/SortsSQL.sql:/docker-entrypoint-initdb.d/03patch.sql:ro
+      - ./src/db:/docker-entrypoint-initdb.d:ro
   game:
     build:
       context: ./

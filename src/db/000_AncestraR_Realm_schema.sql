@@ -3,14 +3,14 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Mer 28 Septembre 2011 à 15:58
+-- Gï¿½nï¿½rï¿½ le : Mer 28 Septembre 2011 ï¿½ 15:58
 -- Version du serveur: 5.1.36
 -- Version de PHP: 5.3.0
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --
--- Base de données: `ancestra_realm`
+-- Base de donnï¿½es: `ancestra_db`
 --
 
 -- --------------------------------------------------------
@@ -81,4 +81,4 @@ CREATE TABLE IF NOT EXISTS `gameservers` (
 --
 
 INSERT INTO `gameservers` (`ID`, `ServerIP`, `ServerPort`, `State`, `ServerBDD`, `ServerDBName`, `ServerUser`, `ServerPassword`, `key`) VALUES
-(1, '127.0.0.1', 5555, 0, '127.0.0.1', 'ancestra_game', 'root', '', 'server1');
+(1, '127.0.0.1', 5555, 0, '127.0.0.1', 'ancestra_db', 'root', '', 'server1');
