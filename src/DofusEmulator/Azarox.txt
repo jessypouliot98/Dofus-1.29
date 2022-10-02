@@ -5,7 +5,7 @@
 TITRE = 1000
 GAME_PORT = 5555
 REALM_PORT = 444
-HOST_IP = 25.179.93.9
+HOST_IP = 192.168.1.100
 SAVE_TIME = 30
 PLAYER_LIMIT = 200
 PLAYER_IP = 4
@@ -35,9 +35,9 @@ PORC_FM = 100
 
 
 # Configuration de la base de donn�e.
-DB_HOST = localhost
-DB_USER = root
-DB_PASS = 
+DB_HOST = 192.168.1.100
+DB_USER = dofusadmin
+DB_PASS = padopado
 STATIC_DB_NAME = ark
 OTHER_DB_NAME = ark
 

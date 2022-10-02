@@ -1,12 +1,14 @@
 version: '3'
 services:
   mysql:
-    image: mysql:8
+    image: mysql:5.7
     restart: always
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ROOT_PASSWORD=padopado
+      - MYSQL_USER=dofusadmin
+      - MYSQL_PASSWORD=padopado
       - MYSQL_DATABASE=ark
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     volumes:
@@ -16,6 +18,9 @@ services:
     build:
       context: ./
       dockerfile: ./docker/Dockerfile
+    ports:
+      - "5555:5555"
+      - "444:444"
     volumes:
       - './src/DofusEmulator:/opt/app:ro'
     depends_on:
