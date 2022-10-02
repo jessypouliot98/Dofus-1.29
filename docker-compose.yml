@@ -16,6 +16,8 @@ services:
       - ./src/db:/docker-entrypoint-initdb.d:ro
     networks:
       - custom
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     
   dofus:
     build:
@@ -30,6 +32,8 @@ services:
       - mysql
     networks:
       - custom
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 networks:
   custom:
