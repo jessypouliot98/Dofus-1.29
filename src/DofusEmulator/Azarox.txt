@@ -1,0 +1,174 @@
+# Fichier de configuration d'Azarox sur les bases de CyonEmu 2.9
+
+
+# Configuration du serveur du jeu.
+TITRE = 1000
+GAME_PORT = 5555
+REALM_PORT = 444
+HOST_IP = 25.179.93.9
+SAVE_TIME = 30
+PLAYER_LIMIT = 200
+PLAYER_IP = 4
+ALLOW_MULTI_ACCOUNT = true
+USE_IP = true
+LOAD_ACTION_DELAY = 15
+
+SERVER_ID = 1
+# 1 2 4 6 7 9 10 13 14 15 16 17 20 21 22 23 27 29 30 31 38 7001 9001
+
+
+# Configuration du console DOS.
+SHOW_RECV = true
+SEND_POLICY = true
+LOCALIP_LOOPBACK = true
+DEBUG = false
+
+
+# Rates
+XP_PVP = 0
+XP_METIER = 5
+XP_PVM = 1000
+DROP = 10
+KAMAS = 1
+HONOR = 20
+PORC_FM = 100
+
+
+# Configuration de la base de donn�e.
+DB_HOST = localhost
+DB_USER = root
+DB_PASS = 
+STATIC_DB_NAME = ark
+OTHER_DB_NAME = ark
+
+
+# Configuration du GamePlay.
+USE_MOBS = true
+START_LEVEL = 1
+START_KAMAS = 30000000
+ZAAP = true
+LVL_PVP = 25
+ALLOW_MULE_PVP = true
+AURA_SYSTEM = true
+MAX_IDLE_TIME = 30
+NOT_IN_HDV = 4820
+MOTD =<b></b> Bienvenue sur <b>Azarox</b> ! 
+MOTD_COLOR = 0d8b0d
+START_ITEMS =
+MAP_NO_PRISMES = 935,528,9454,951,1242,164,1158,8037,8437,8088,8125,8163,10643,11170,1841,844,11210,4263,3022,6855,6137,3250,4739,5295,8785,7411,6954,2191,10297,10349,10304,10317
+
+
+# Arenes.
+
+ARENA_MAP = 10134,10132,10131,10133,10137,10135,10136,10138
+ARENA_TIMER = 30000
+
+
+# Limit PA & PM.
+MAXPA = 12
+MAXPM = 6
+
+
+# Reboot automatique( En millisecondes)
+ACTIV_REBOOT = true
+REBOOT_TIME = 34000000
+
+
+# Caract�ristiques 2.0
+ACTIV_CARACT_2 = true
+
+
+# Syst�me pub
+ACTIV_PUB = true
+PUB1 = <b>Information :</b> Allez votez et gagner des points.
+PUB2 = ICI LES INFO
+PUB3 = ICI LES INFO
+
+
+# Maps
+START_MAP = 164
+START_CELL = 298
+
+SHOP_MAP = 10111
+SHOP_CELL = 326
+
+CONFIG_MAP_PVM = 13029
+CONFIG_CELL_PVM = 454
+
+CONFIG_MAP_PVP = 952
+CONFIG_CELL_PVP = 367
+
+# Dragodinde
+MAX_LEVEL_MONTURE = 100
+FEED_MOUNT = 41
+
+# Experience en d�fie
+ACTIVER_XP_DEFI = true
+
+#######################################################################################################################################################
+#######################################################################################################################################################
+
+#AJOUT PAR AZAROX
+
+
+ACTIVER_PRESTIGE = true
+
+LEVEL_DEPART_PRESTIGE = 1
+EXPERIENCE_DEPART_PRESTIGE = 1
+TITRE_DEPART_PRESTIGE = 70
+IDCADPRS = 20503
+MAXPRESTIGE = 11
+LEVELPOURPASSERPRESTIGE = 200
+
+# SYSTEME FM PAR COMMANDE
+ 
+ACTIVER_FM_COMMAND = true
+
+# NBR DE JETS ATTRIBUER PAR LA COMMANDE EN PA  ET PM
+
+CHAPEAUPA = 1
+CAPEPA = 1
+AMUPA = 1
+DROITEPA = 1
+GAUCHEPA = 1
+CEINTUREPA = 1
+BOTTESPA = 1
+ARMEPA = 1
+
+
+CHAPEAUPM = 1
+CAPEPM = 1
+AMUPM = 1
+DROITEPM = 1
+GAUCHEPM = 1
+CEINTUREPM = 1
+BOTTESPM = 1
+ARMEPM = 1
+
+# PRIX DES COMMANDES FM EN POINTS BOUTIQUE
+
+PRIXCHAPEAUPA = 200
+PRIXCHAPEAUPM = 200
+PRIXAMUPA = 200
+PRIXAMUPM = 200
+PRIXDROITEPA = 200
+PRIXGAUCHEPA = 200
+PRIXGAUCHEPM = 200
+PRIXDROITEPM = 200
+PRIXCEINTUREPA = 200
+PRIXCEINTUREPM = 200
+PRIXCAPEPA = 200
+PRIXCAPEPM = 200
+PRIXBOTTESPA = 200
+PRIXBOTTESPM = 200
+PRIXARMEPA = 200
+PRIXARMEPM = 200
+
+# CONFIGURATION KOLIZEUM
+
+MAXPERSOPARKOLI = 4
+TRANCHELEVEL = 100
+MAPKOLI1 = 1
+MAPKOLI2 = 1
+MAPKOLI3 = 1
+MAPKOLI4 = 1

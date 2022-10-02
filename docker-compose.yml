@@ -6,26 +6,17 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=padopado
-      - MYSQL_USER=dofusadmin
-      - MYSQL_PASSWORD=padopado
-      - MYSQL_DATABASE=ancestra_db
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_DATABASE=ark
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - ./.mysql/:/var/lib/mysql:rw
       - ./src/db:/docker-entrypoint-initdb.d:ro
-  game:
+  dofus:
     build:
       context: ./
-      dockerfile: ./docker/Dockerfile.game
+      dockerfile: ./docker/Dockerfile
     volumes:
-      - './src/DofusEmulator/Game:/opt/app:rw'
-    depends_on:
-      - mysql
-  realm:
-    build:
-      context: ./
-      dockerfile: ./docker/Dockerfile.realm
-    volumes:
-      - './src/DofusEmulator/Realm:/opt/app:rw'
+      - './src/DofusEmulator:/opt/app:ro'
     depends_on:
       - mysql
