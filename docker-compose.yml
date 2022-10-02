@@ -1,0 +1,33 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=padopado
+      - MYSQL_USER=dofusadmin
+      - MYSQL_PASSWORD=padopado
+      - MYSQL_DATABASE=dofus
+    volumes:
+      - ./.mysql/:/var/lib/mysql:rw
+      - ./src/db/ar54_game.sql:/docker-entrypoint-initdb.d/01schema_game.sql:ro
+      - ./src/db/ar54_other.sql:/docker-entrypoint-initdb.d/02schema_other.sql:ro
+      - ./src/db/Extra/SortsSQL.sql:/docker-entrypoint-initdb.d/03patch.sql:ro
+  game:
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile.game
+    volumes:
+      - './src/DofusEmulator/Game:/opt/app:ro'
+    depends_on:
+      - mysql
+  realm:
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile.realm
+    volumes:
+      - './src/DofusEmulator/Realm:/opt/app:ro'
+    depends_on:
+      - mysql
